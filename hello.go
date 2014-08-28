@@ -95,7 +95,7 @@ func init() {
   m := martini.Classic()
   
   allowCORSHandler := cors.Allow(&cors.Options{
-	AllowOrigins:     []string{"http://*.techslides.com"},
+	AllowOrigins:     []string{"*"},
 	AllowMethods:     []string{"GET", "POST"},
 	AllowHeaders:     []string{"Origin"},
   })
